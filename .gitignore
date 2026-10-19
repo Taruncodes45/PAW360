@@ -1,0 +1,50 @@
+# PawSense360 .gitignore
+
+# Environment and secrets — NEVER commit real credentials
+.env
+.env.local
+.env.production
+firmware/config.h
+dashboard/.env
+backend/.env
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.vite/
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arduino
+firmware/*.elf
+firmware/*.hex
+firmware/*.bin
+firmware/*.map
+
+# Logs and Media
+logs/
+*.log
+*.mp4
+
+# Testing
+coverage/
+.nyc_output/
